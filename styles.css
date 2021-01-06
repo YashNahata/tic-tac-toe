@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+*{
+	margin: :0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Patrick Hand', cursive;
+}
+h1{
+	text-align: center;
+}
+.game-area{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.player{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 175px;
+	margin: auto;
+}
+.game{
+	height: 450px;
+	width: 450px;
+	margin: auto;
+	/*background-color: #ccf2ff;*/
+	background-color:  #e6f9ff;
+	border: 0.1px solid black;
+	display: grid;
+	grid-template-rows: repeat(9,150px);
+	grid-template-columns: repeat(3,150px);
+}
+.grid{
+	border: 1px solid black;
+	padding: 0;
+	text-align: center;
+	font-size: 20px;
+}
+.x{
+	font-size: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.o{
+	font-size: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+span{
+	font-size: 25px;
+	font-weight: bold;
+	color: #00b0e6; 
+}
+button{
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+	width: 90px;
+	height: 30px;
+	margin: 15px 585px;
+	background-color: white;
+	border: 2px solid black;
+}
+button:hover{
+	background-color: #ccf2ff;
+	cursor: pointer;
+}
+.change-color-win{
+	background-color: #ff8080;
+}

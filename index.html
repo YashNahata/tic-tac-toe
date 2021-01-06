@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Tic Tac Toe</h1>
+	<div class="game-area">
+		<div class="player" id="player-1">
+			<h2>Player 1 (X)</h2>
+			<span id="score-1"></span>
+			<p id='move-1'></p>
+		</div>
+		<div class="game">
+			<div class="grid" id="1" onclick="listen(1)"></div>
+			<div class="grid" id="2" onclick="listen(2)"></div>
+			<div class="grid" id="3" onclick="listen(3)"></div>
+			<div class="grid" id="4" onclick="listen(4)"></div>
+			<div class="grid" id="5" onclick="listen(5)"></div>
+			<div class="grid" id="6" onclick="listen(6)"></div>
+			<div class="grid" id="7" onclick="listen(7)"></div>
+			<div class="grid" id="8" onclick="listen(8)"></div>
+			<div class="grid" id="9" onclick="listen(9)"></div>
+		</div>
+		<div class="player" id="player-2">
+			<h2>Player 2 (O)</h2>
+			<span id="score-2"></span>
+			<p id='move-2'></p>
+		</div>
+	</div>
+	<button onclick="newGame()">New Game</button>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
